@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({extended: false}))
 //middleware
 app.use('/api/jobs', require('./routes/jobRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 app.use(errorHandler)
 
